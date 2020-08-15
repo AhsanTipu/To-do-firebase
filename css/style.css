@@ -1,0 +1,72 @@
+*{
+    margin: 0px ;
+    padding: 0px ;
+}
+.logo{
+    font-size: 40px;
+    color: green;
+}
+.mark{
+    background-color: black;
+}
+.headz{
+    color: white;
+    padding-top: 8px;
+}
+.bor{
+    border-bottom: 2px solid green;
+    padding-bottom: 9px;
+}
+body{
+    background-image: url(../images/Lights\ on\ Black\ Background.png);
+}
+.two{
+    background-color: pink;
+    width: 500px;
+text-align: center;
+}
+.inside{
+    text-align: center;
+    
+
+}
+.fade-in{
+    animation: fadeIn 6s;
+    animation-timing-function: ease-in-out;
+  
+}
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.newle{
+    text-align: inherit;
+}
+.insidea{
+    text-align: center;
+    border: 2px groove green;
+}
+.place{
+    width: 230px;
+    height: 30px;
+}
+.del{
+    margin-left: 10px;
+margin-top: 10px;
+
+widows: 80px;
+
+
+}
+.newle :hover{
+    color: lawngreen;
+}
+.edit{
+    margin-left: 10px;
+    width: 80px;
+    margin-top: 10px;
+}

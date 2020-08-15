@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap-4.5.0-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css//fontawesome-free-5.13.0-web/css/all.css">
+    <title>Todo App</title>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    
+<script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-database.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyC1516ASb9qqdG0QfX2vReYz0blDtCQW9s",
+    authDomain: "todofirebase-wm11065.firebaseapp.com",
+    databaseURL: "https://todofirebase-wm11065.firebaseio.com",
+    projectId: "todofirebase-wm11065",
+    storageBucket: "todofirebase-wm11065.appspot.com",
+    messagingSenderId: "665505591149",
+    appId: "1:665505591149:web:f2dd8b4a33f645f08e3464",
+    measurementId: "G-3G4J6JZGDL"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+</head>
+<body>
+    
+<section id="one" style="background-color: black;">
+  <div class="container">
+      <div class="row" style="background-color: black;">
+          <div class="col-2 pt-2 pb-2">
+           <a href="#"><i class="fas fa-clipboard-check logo"></i></a> 
+          </div>
+          <div class="col-10 ">
+<marquee behavior="" direction="left" class="mark"><h4 class="headz">Submitted By : Syed Ahsan Ali Roll no: WM11065</h4></marquee>
+          </div>
+      </div>
+    </div>
+</section>
+<br>
+<div class="container">
+<h3 style="text-align: center; font-family: 'Times New Roman', Times, serif; font-weight: bold; color: white;" class="bor">Todo-App</h3>
+</div>
+<br>
+<div class="container">
+<div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12">
+<div class="inside " >
+<input type="text" placeholder="Enter TO-DO" class="place" id="todo">
+<br>
+<br>
+<button type="button" onclick="enter()" class="btn btn-success mx-1"  >ADD To-Do</button>
+<button type="button" class="btn btn-danger mx-1" onclick="deleteAll() ">Delete All</button>
+</div>
+<br>
+<h6 style="text-align: left; color: white;" class="bor">WorkList</h6>
+<div class="insidea">
+    <ul class="newle fade-in" id="list" style="color:white" >
+<br>
+    </ul>
+</div>
+    </div>
+</div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
